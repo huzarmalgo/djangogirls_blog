@@ -25,7 +25,7 @@ SECRET_KEY = 'jgr-^%6r(3s^c1nzp(k3)v4*cavzqwmfcavc-63uns2&t955&%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["malgorzatahuzar2.pythonanywhere.com", "127.0.0.1"]
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
